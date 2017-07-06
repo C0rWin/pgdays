@@ -15,14 +15,6 @@ limitations under the License.
 */
 package main
 
-import (
-	"encoding/json"
-	"fmt"
-
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/hyperledger/fabric/protos/peer"
-)
-
 // Person
 type Person struct {
 	ID      string `json:"id"`
@@ -34,12 +26,13 @@ type Person struct {
 // personManagement the chaincode interface implementation to manage
 // the ledger of person records
 type personManagement struct {
-	actions map[string]PersonAction
 }
 
 func main() {
-	err := shim.Start(new(personManagement))
-	if err != nil {
-		fmt.Printf("Error starting Simple chaincode: %s", err)
-	}
+	/*
+		err := shim.Start(new(personManagement))
+		if err != nil {
+			fmt.Printf("Error starting Simple chaincode: %s", err)
+		}
+	*/
 }
