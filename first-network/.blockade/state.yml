@@ -1,0 +1,13 @@
+blockade_id: firstnetwork
+containers:
+  cli: {id: 650104ed708a6b56a19da1503c26bf2a7c42eac94c3e054ca708bcd385448a7f}
+  dev-peer0.org1.example.com-mycc-1.0: {id: 3d0528a0a1f7ae528565b918866ec713d7bd1d2b3bb4a904411ccd3cfdf2b927}
+  dev-peer0.org2.example.com-mycc-1.0: {id: a2e563310bb9d3180a425d3348e56f292c0f1059c880620bbfddaf9c80629a60}
+  dev-peer1.org1.example.com-mycc-1.0: {id: f586f6b34767602d8942e460abfbfb75749b40b25185e824e0a0b8d98d1b4d30}
+  dev-peer1.org2.example.com-mycc-1.0: {id: a174537fd599485daf5142fd890b8d16a2e43f118b581f0668c307e07bfbed14}
+  orderer.example.com: {id: 27427c4a041a746770443acb5476ff736d8b1debea4310306170b714aab45965}
+  peer0.org1.example.com: {id: 1dd44c71d87b68249e8cdd62db8b544fa4e9521788ea2f30da2d0e6c07ec650f}
+  peer0.org2.example.com: {id: 024b02286b4900703df860ad0fc7d049528ce49887d4da45e07c4fc51d81f13a}
+  peer1.org1.example.com: {id: b6051b681b78755ab2c38275a6d8f71d533a7fde24175073b1a09ac8f63c9c49}
+  peer1.org2.example.com: {id: a1c95f1f65e4a83b6faa3970b9a350685264292cd41d501e094103171742d24a}
+version: 1
