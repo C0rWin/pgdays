@@ -15,6 +15,11 @@ limitations under the License.
 */
 package main
 
+import (
+	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/hyperledger/fabric/protos/peer"
+)
+
 // Person
 type Person struct {
 	ID      string `json:"id"`
@@ -26,6 +31,19 @@ type Person struct {
 // personManagement the chaincode interface implementation to manage
 // the ledger of person records
 type personManagement struct {
+}
+
+func (p *personManagement) Init(stub shim.ChaincodeStubInterface) peer.Response {
+	return shim.Success(nil)
+}
+
+func (p *personManagement) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
+	actionName, params := stub.GetFunctionAndParameters()
+
+	if actionName == "addPerson" {
+
+	}
+
 }
 
 func main() {
