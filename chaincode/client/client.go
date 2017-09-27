@@ -22,7 +22,7 @@ func main() {
 	}
 
 	cl := fabricclient.NewClient(conf)
-	bccspFactory.InitFactories(nil)
+	bccspFactory.InitFactories(conf.CSPConfig())
 	cl.SetCryptoSuite(bccspFactory.GetDefault())
 
 	privKey := filepath.Join(conf.CryptoConfigPath(), "peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/045a627439618dbedc9a68888fee2fb89a0dc2b0b31b965cf57ddbc9e43dda0b_sk")

@@ -220,6 +220,7 @@ func (pm *personManagement) GetPreviousValue(params []string, stub shim.Chaincod
 		return shim.Success(modification.Value)
 	}
 
+
 	fmt.Printf("No history found for person with id %s\n", personID)
 	return shim.Success([]byte(fmt.Sprintf("No history for person with id %s", personID)))
 }
